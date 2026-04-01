@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: 'Pretendard', ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #1e3a8a; /* navy */
+  --color-primary-light: #3b82f6; 
+  --color-plus: #10b981; /* emerald/green for plus factors */
+  --color-plus-bg: #d1fae5;
+  --color-minus: #ef4444; /* red for minus factors */
+  --color-minus-bg: #fee2e2;
+  --color-bg-light: #f8fafc;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  background-color: var(--color-bg-light);
+  color: #1e293b;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
